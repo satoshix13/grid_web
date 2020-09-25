@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5rem;
+  background-color: var(--grey);
+}
+
+a {
+   text-decoration: none;
+   color: var(--dark);
+}
+
+p {
+  padding: 1rem;
+}
+
+
+
+
+:root {
+  --main-color: orange;
+  --secundary-color: rgb(194, 26, 26);
+  --purple: purple;
+  --blue: lightblue;
+  --dark: #333;
+  --grey: lightgrey;
+  --light-dark: rgb(95, 93, 93);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+
+/* helper class */
+
+.btn {
+  color: white;
+  padding: 1rem;
+  background: var(--secundary-color);
+}
+
+img {
+  width: 100%;
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.bg-light-dark {
+    background: var(--light-dark);
+  
+}
+
+
+.bg-secundary {
+  background-color: var(--secundary-color);
+}
+
+
+/* Navigation */
+
+
+nav {
+  background: #fff;
+}
+nav .container {
+  display: grid;
+  grid-template-columns: 6fr 3fr 1fr;
+  align-items: center;
+}
+
+/* navigation - article */
+
+/* nav .container {
+  display: grid;
+  grid-template-rows: 100px 150px;
+  align-items: center;
+} */
+
+nav .logo{
+  width: 180px;
+  padding-top: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li{
+  padding-right: 1rem;
+}
+
+
+
+/* Showcase */
+
+#showcase {
+  margin-top: 1rem;
+  background: url(../img/featured.jpg)no-repeat center center/cover;
+  height: 40vh;
+  filter: brightness(90%);
+
+}
+
+#showcase .container {
+  color: white;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+
+.category {
+  display: inline-block;
+  background-color: #333;
+  border-radius: 20px;
+  color: white;
+  padding: 0.5rem;
+}
+
+.category-sport {
+  background: var(--main-color)
+}
+
+.category-ent {
+  background: var(--purple)
+}
+
+.category-tech {
+  background-color: var(--blue);
+}
+
+.article-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.article-container > :first-child,
+.article-container > :last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  grid-column: 1 / 2 span;
+}
+
+.article-container > :last-child  {
+  grid-column: 2 / 2 span;
+}
+
+.card {
+  background-color: white;
+}
+
+
+
+
+/* footer */
+
+footer {
+  background-color: #333;
+  
+}
+
+footer img{
+  width: 150px;
+  padding: 1rem;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  color: white;
+  
+}
+
+footer button {
+  display: block;
+  margin: 1rem;
+  width: 70%;
+}
+
+footer input {
+  width: 70%;
+  height: 2rem;
+}
+
+.footer-text {
+ grid-column-start: 1;
+ grid-column-end: 5;
+ margin: 1rem 0;
+ text-align: center;
+ color: white;
+
+}
+
+
+
+
+/* about page */
+
+.card-container {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  gap: 1rem;
+
+}
+
+
+.card-about {
+  background: white;
+  color: black;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.card-join {
+  background: var(--secundary-color);
+  color: white;
+  margin: 1rem 0;
+ 
+}
+
+
+
+
+
+
+
+
+
+
